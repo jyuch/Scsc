@@ -5,7 +5,7 @@ function Test {
         [int] $expected
     )
     .\Scsc.exe > temp.il
-    ilasm.exe temp.il > $null
+    ilasm.exe temp.il /exe /debug=impl /output=temp.exe > $null
     .\temp.exe
 
     if($LASTEXITCODE -eq $expected) {
