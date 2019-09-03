@@ -11,9 +11,10 @@ namespace Scsc
         static void Main(string[] args)
         {
             Console.WriteLine(".assembly Temp {}");
-            Console.WriteLine(".method public static void main()");
+            Console.WriteLine(".method public static int32 main()");
             Console.WriteLine("{");
             Console.WriteLine(".entrypoint");
+            Console.WriteLine("ldc.i4 42");
             Console.WriteLine("ret");
             Console.WriteLine("}");
         }
