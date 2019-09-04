@@ -51,7 +51,7 @@ namespace Scsc
                 }
                 else
                 {
-                    Console.WriteLine("Invalid char: '{0}'", input[0]);
+                    Console.Error.WriteLine("Invalid char: '{0}'", input[0]);
                     return -1;
                 }
             }
